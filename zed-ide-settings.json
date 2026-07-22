@@ -2,6 +2,7 @@
   // "buffer_line_height": {
   //   "custom": 2.299999952316284
   // },
+  "cli_default_open_behavior": "new_window",
   "agent_servers": {
     "claude-acp": {
       "default_config_options": {
@@ -84,11 +85,33 @@
       "host": "100.68.149.54",
       "username": "dark-theme-dev",
       "args": [],
+      "port_forwards": [
+        { "local_port": 3000, "remote_port": 3000 },
+        { "local_port": 4200, "remote_port": 4200 },
+        { "local_port": 9092, "remote_port": 9092 },
+        { "local_port": 56103, "remote_port": 56103 },
+        { "local_port": 9093, "remote_port": 9093 },
+        { "local_port": 9094, "remote_port": 9094 },
+        { "local_port": 3001, "remote_port": 3001 },
+        { "local_port": 3100, "remote_port": 3100 },
+        { "local_port": 5678, "remote_port": 5678 }
+      ],
       "projects": []
     },
     {
       "host": "ubuntu-local",
       "args": [],
+      "port_forwards": [
+        { "local_port": 3000, "remote_port": 3000 },
+        { "local_port": 4200, "remote_port": 4200 },
+        { "local_port": 9092, "remote_port": 9092 },
+        { "local_port": 56103, "remote_port": 56103 },
+        { "local_port": 9093, "remote_port": 9093 },
+        { "local_port": 9094, "remote_port": 9094 },
+        { "local_port": 3001, "remote_port": 3001 },
+        { "local_port": 3100, "remote_port": 3100 },
+        { "local_port": 5678, "remote_port": 5678 }
+      ],
       "projects": [
         {
           "paths": [
@@ -231,7 +254,7 @@
       "editor.document_highlight.read_background": "#00000000",
       "editor.document_highlight.write_background": "#00000000",
       "border.variant": "#15141C",
-      "border": "#15141C",
+      "border": "#172c42",
       "title_bar.background": "#15141C",
       "panel.background": "#15141C",
       "panel.focused_border": "#4E466E",
@@ -308,8 +331,8 @@
   },
   "agent_buffer_font_size": 20,
   // "vim_mode": true,
-  "multi_cursor_modifier": "cmd_or_ctrl",
-  "cursor_shape": "block",
+  // "multi_cursor_modifier": "cmd_or_ctrl",
+  "cursor_shape": "bar",
   "cursor_blink": false,
   "selection_highlight": false,
   "drag_and_drop_selection": {
@@ -323,7 +346,7 @@
   // "auto_indent": "none",
   "auto_indent_on_paste": false,
   // auto suggest code.
-  "show_completions_on_input": true,
+  // "show_completions_on_input": true,
   "show_completion_documentation": false,
   "inline_code_actions": false,
   "lsp_document_colors": "none",
@@ -354,5 +377,8 @@
   "centered_layout": {
     "right_padding": 0.15,
     "left_padding": 0.15
+  },
+  "markdown_preview": {
+    "limit_content_width": false
   }
 }
