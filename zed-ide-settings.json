@@ -299,7 +299,7 @@
   //   "runnables": false
   // },
   "indent_guides": {
-    "enabled": false
+    "enabled": true
   },
   "ui_font_size": 20,
   "buffer_font_size": 20,
@@ -319,9 +319,11 @@
   "current_line_highlight": "none",
   "show_whitespaces": "none",
   "tab_size": 2,
+  // auto add indent when enter to new line
   // "auto_indent": "none",
   "auto_indent_on_paste": false,
-  "show_completions_on_input": false,
+  // auto suggest code.
+  "show_completions_on_input": true,
   "show_completion_documentation": false,
   "inline_code_actions": false,
   "lsp_document_colors": "none",
@@ -332,7 +334,7 @@
       "milliseconds": 1000
     }
   },
-  "auto_update": false,
+  "auto_update": true,
   "extend_comment_on_newline": false,
   "horizontal_scroll_margin": 1,
   "vertical_scroll_margin": 1,
