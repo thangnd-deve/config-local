@@ -206,11 +206,6 @@
       "initialization_options": {
         "check": {
           "command": "clippy"
-        },
-        "cargo": {
-          "buildScripts": {
-            "enable": true
-          }
         }
       }
     },
@@ -330,7 +325,7 @@
   "show_completion_documentation": false,
   "inline_code_actions": false,
   "lsp_document_colors": "none",
-  "hover_popover_enabled": false,
+  "hover_popover_enabled": true,
   "format_on_save": "off",
   "autosave": {
     "after_delay": {
