@@ -86,15 +86,42 @@
       "username": "dark-theme-dev",
       "args": [],
       "port_forwards": [
-        { "local_port": 3000, "remote_port": 3000 },
-        { "local_port": 4200, "remote_port": 4200 },
-        { "local_port": 9092, "remote_port": 9092 },
-        { "local_port": 56103, "remote_port": 56103 },
-        { "local_port": 9093, "remote_port": 9093 },
-        { "local_port": 9094, "remote_port": 9094 },
-        { "local_port": 3001, "remote_port": 3001 },
-        { "local_port": 3100, "remote_port": 3100 },
-        { "local_port": 5678, "remote_port": 5678 }
+        {
+          "local_port": 3000,
+          "remote_port": 3000
+        },
+        {
+          "local_port": 4200,
+          "remote_port": 4200
+        },
+        {
+          "local_port": 9092,
+          "remote_port": 9092
+        },
+        {
+          "local_port": 56103,
+          "remote_port": 56103
+        },
+        {
+          "local_port": 9093,
+          "remote_port": 9093
+        },
+        {
+          "local_port": 9094,
+          "remote_port": 9094
+        },
+        {
+          "local_port": 3001,
+          "remote_port": 3001
+        },
+        {
+          "local_port": 3100,
+          "remote_port": 3100
+        },
+        {
+          "local_port": 5678,
+          "remote_port": 5678
+        }
       ],
       "projects": []
     },
@@ -102,15 +129,42 @@
       "host": "ubuntu-local",
       "args": [],
       "port_forwards": [
-        { "local_port": 3000, "remote_port": 3000 },
-        { "local_port": 4200, "remote_port": 4200 },
-        { "local_port": 9092, "remote_port": 9092 },
-        { "local_port": 56103, "remote_port": 56103 },
-        { "local_port": 9093, "remote_port": 9093 },
-        { "local_port": 9094, "remote_port": 9094 },
-        { "local_port": 3001, "remote_port": 3001 },
-        { "local_port": 3100, "remote_port": 3100 },
-        { "local_port": 5678, "remote_port": 5678 }
+        {
+          "local_port": 3000,
+          "remote_port": 3000
+        },
+        {
+          "local_port": 4200,
+          "remote_port": 4200
+        },
+        {
+          "local_port": 9092,
+          "remote_port": 9092
+        },
+        {
+          "local_port": 56103,
+          "remote_port": 56103
+        },
+        {
+          "local_port": 9093,
+          "remote_port": 9093
+        },
+        {
+          "local_port": 9094,
+          "remote_port": 9094
+        },
+        {
+          "local_port": 3001,
+          "remote_port": 3001
+        },
+        {
+          "local_port": 3100,
+          "remote_port": 3100
+        },
+        {
+          "local_port": 5678,
+          "remote_port": 5678
+        }
       ],
       "projects": [
         {
@@ -221,7 +275,8 @@
     },
     "Rust": {
       "tab_size": 4,
-      "formatter": "language_server"
+      "formatter": "language_server",
+      "semantic_tokens": "combined"
     }
   },
   "lsp": {
@@ -364,9 +419,9 @@
   "when_closing_with_no_tabs": "keep_window_open",
   "close_on_file_delete": true,
   "restore_on_file_reopen": false,
-  "restore_on_startup": "empty_tab",
+  "restore_on_startup": "last_session",
   "session": {
-    "restore_unsaved_buffers": false
+    "restore_unsaved_buffers": true
   },
   "git": {
     "git_gutter": "hide",
@@ -380,5 +435,16 @@
   },
   "markdown_preview": {
     "limit_content_width": false
+  },
+  "semantic_tokens": "combined",
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_modifiers": [
+          "mutable"
+        ],
+        "underline": true
+      }
+    ]
   }
 }
