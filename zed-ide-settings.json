@@ -1,24 +1,17 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  // "buffer_line_height": {
-  //   "custom": 2.299999952316284
-  // },
-  "agent_servers": {
-    "claude-acp": {
-      "default_config_options": {
-        "model": "default"
-      },
-      "type": "registry"
-    }
-  },
+  "cli_default_open_behavior": "new_window",
   "tabs": {
     "git_status": true
   },
-  // "project_panel": {
-  //   "git_status": true
-  // },
   "hard_tabs": false,
-  // "ui_font_size": 18.0,
-  // "buffer_font_size": 17.0,
   "ssh_connections": [
     {
       "host": "100.68.149.54",
@@ -84,11 +77,87 @@
       "host": "100.68.149.54",
       "username": "dark-theme-dev",
       "args": [],
+      "port_forwards": [
+        {
+          "local_port": 3000,
+          "remote_port": 3000
+        },
+        {
+          "local_port": 4200,
+          "remote_port": 4200
+        },
+        {
+          "local_port": 9092,
+          "remote_port": 9092
+        },
+        {
+          "local_port": 56103,
+          "remote_port": 56103
+        },
+        {
+          "local_port": 9093,
+          "remote_port": 9093
+        },
+        {
+          "local_port": 9094,
+          "remote_port": 9094
+        },
+        {
+          "local_port": 3001,
+          "remote_port": 3001
+        },
+        {
+          "local_port": 3100,
+          "remote_port": 3100
+        },
+        {
+          "local_port": 5678,
+          "remote_port": 5678
+        }
+      ],
       "projects": []
     },
     {
       "host": "ubuntu-local",
       "args": [],
+      "port_forwards": [
+        {
+          "local_port": 3000,
+          "remote_port": 3000
+        },
+        {
+          "local_port": 4200,
+          "remote_port": 4200
+        },
+        {
+          "local_port": 9092,
+          "remote_port": 9092
+        },
+        {
+          "local_port": 56103,
+          "remote_port": 56103
+        },
+        {
+          "local_port": 9093,
+          "remote_port": 9093
+        },
+        {
+          "local_port": 9094,
+          "remote_port": 9094
+        },
+        {
+          "local_port": 3001,
+          "remote_port": 3001
+        },
+        {
+          "local_port": 3100,
+          "remote_port": 3100
+        },
+        {
+          "local_port": 5678,
+          "remote_port": 5678
+        }
+      ],
       "projects": [
         {
           "paths": [
@@ -128,11 +197,6 @@
       "projects": []
     }
   ],
-  // "theme": {
-  //   "mode": "dark",
-  //   "light": "One Light",
-  //   "dark": "Aura Dark"
-  // },
   "icon_theme": {
     "mode": "light",
     "light": "Material Icon Theme",
@@ -165,10 +229,6 @@
         "language_server": {
           "name": "!biome"
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
       }
     },
     "TypeScript": {
@@ -176,10 +236,6 @@
         "language_server": {
           "name": "!biome"
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
       }
     },
     "TSX": {
@@ -187,10 +243,6 @@
         "language_server": {
           "name": "!biome"
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
       }
     },
     "Svelte": {
@@ -198,7 +250,8 @@
     },
     "Rust": {
       "tab_size": 4,
-      "formatter": "language_server"
+      "formatter": "language_server",
+      "semantic_tokens": "combined"
     }
   },
   "lsp": {
@@ -220,18 +273,13 @@
       }
     }
   },
-  // "format_on_save": "off",
   "formatter": "language_server",
-  // "soft_wrap": "editor_width"
-  //
-  // // more config for theme dev
-  "theme": "Aura Dark",
   "theme_overrides": {
     "Aura Dark": {
       "editor.document_highlight.read_background": "#00000000",
       "editor.document_highlight.write_background": "#00000000",
       "border.variant": "#15141C",
-      "border": "#15141C",
+      "border": "#172c42",
       "title_bar.background": "#15141C",
       "panel.background": "#15141C",
       "panel.focused_border": "#4E466E",
@@ -256,27 +304,16 @@
     "show_branch_name": false,
     "show_user_menu": false
   },
-  // "tab_bar": {
-  //   "show": false
-  // },
   "toolbar": {
     "quick_actions": false
   },
-  // bottom bar
-  // "status_bar": {
-  //   "experimental.show": false
-  // },
   "project_panel": {
     "dock": "right",
     "default_width": 400,
     "hide_root": true,
     "auto_fold_dirs": false,
     "starts_open": false,
-    // "git_status": false,
     "sticky_scroll": false,
-    // "scrollbar": {
-    //   "show": "never"
-    // },
     "indent_guides": {
       "show": "never"
     }
@@ -293,23 +330,20 @@
   "scrollbar": {
     "show": "never"
   },
-  // "gutter": {
-  //   "min_line_number_digits": 0,
-  //   "folds": false,
-  //   "runnables": false
-  // },
   "indent_guides": {
     "enabled": true
   },
-  "ui_font_size": 20,
-  "buffer_font_size": 20,
   "buffer_line_height": {
     "custom": 2
   },
   "agent_buffer_font_size": 20,
+<<<<<<< HEAD
   // "vim_mode": true,
   // "multi_cursor_modifier": "cmd_or_ctrl",
   "cursor_shape": "block",
+=======
+  "cursor_shape": "bar",
+>>>>>>> 3d45a9cecf299b8465b5821ecf8bcbf3f95c4ccc
   "cursor_blink": false,
   "selection_highlight": false,
   "drag_and_drop_selection": {
@@ -319,10 +353,7 @@
   "current_line_highlight": "none",
   "show_whitespaces": "none",
   "tab_size": 2,
-  // auto add indent when enter to new line
-  // "auto_indent": "none",
   "auto_indent_on_paste": false,
-  // auto suggest code.
   "show_completions_on_input": true,
   "show_completion_documentation": false,
   "inline_code_actions": false,
@@ -341,10 +372,7 @@
   "when_closing_with_no_tabs": "keep_window_open",
   "close_on_file_delete": true,
   "restore_on_file_reopen": false,
-  "restore_on_startup": "empty_tab",
-  "session": {
-    "restore_unsaved_buffers": false
-  },
+  "restore_on_startup": "last_session",
   "git": {
     "git_gutter": "hide",
     "inline_blame": {
@@ -354,5 +382,38 @@
   "centered_layout": {
     "right_padding": 0.15,
     "left_padding": 0.15
+  },
+  "markdown_preview": {
+    "limit_content_width": false
+  },
+  "semantic_tokens": "combined",
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_modifiers": [
+          "mutable"
+        ],
+        "underline": true
+      }
+    ]
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Ayu Dark"
   }
 }
