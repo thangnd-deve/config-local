@@ -308,7 +308,7 @@
   },
   "agent_buffer_font_size": 20,
   // "vim_mode": true,
-  "multi_cursor_modifier": "cmd_or_ctrl",
+  // "multi_cursor_modifier": "cmd_or_ctrl",
   "cursor_shape": "block",
   "cursor_blink": false,
   "selection_highlight": false,
