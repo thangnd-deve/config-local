@@ -337,13 +337,7 @@
     "custom": 2
   },
   "agent_buffer_font_size": 20,
-<<<<<<< HEAD
-  // "vim_mode": true,
-  // "multi_cursor_modifier": "cmd_or_ctrl",
-  "cursor_shape": "block",
-=======
   "cursor_shape": "bar",
->>>>>>> 3d45a9cecf299b8465b5821ecf8bcbf3f95c4ccc
   "cursor_blink": false,
   "selection_highlight": false,
   "drag_and_drop_selection": {
