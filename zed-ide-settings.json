@@ -205,7 +205,6 @@
   "auto_install_extensions": {
     "html": true,
     "php": true,
-    "laravel": true,
     "twig": true,
     "svelte": true,
     "tailwindcss": true,
@@ -217,7 +216,17 @@
     "env": true,
     "log": true,
     "vue": true,
-    "angular": true
+    "angular": true,
+    "blade": true
+  },
+  // Debugger: show variable values inline (end of line) while stopped at a breakpoint.
+  // Only value hints are on; LSP type/parameter hints stay off.
+  "inlay_hints": {
+    "enabled": true,
+    "show_value_hints": true,
+    "show_type_hints": false,
+    "show_parameter_hints": false,
+    "show_other_hints": false
   },
   "languages": {
     "PHP": {
@@ -245,9 +254,6 @@
         }
       }
     },
-    "Svelte": {
-      "tab_size": 2
-    },
     "Rust": {
       "tab_size": 4,
       "formatter": "language_server",
@@ -270,6 +276,12 @@
           "ngClass",
           "class:list"
         ]
+      }
+    },
+    "phpactor": {
+      "binary": {
+        "path": "/home/vnjdev/.local/bin/phpactor-docker",
+        "arguments": ["language-server"]
       }
     }
   },
@@ -313,7 +325,7 @@
     "hide_root": true,
     "auto_fold_dirs": false,
     "starts_open": false,
-    "sticky_scroll": false,
+    "sticky_scroll": true,
     "indent_guides": {
       "show": "never"
     }
@@ -368,9 +380,8 @@
   "restore_on_file_reopen": false,
   "restore_on_startup": "last_session",
   "git": {
-    "git_gutter": "hide",
     "inline_blame": {
-      "enabled": false
+      "enabled": true
     }
   },
   "centered_layout": {
